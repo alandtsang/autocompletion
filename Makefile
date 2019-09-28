@@ -1,4 +1,4 @@
-BINARY="autoc"
+BINARY="autocompletion"
 VERSION=0.0.1
 BUILD=`date +%FT%T%z`
 

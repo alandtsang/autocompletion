@@ -20,6 +20,7 @@ import (
 	"os"
 
 	"github.com/alandtsang/autocompletion/cmd/cat"
+	"github.com/alandtsang/autocompletion/cmd/completion"
 	"github.com/alandtsang/autocompletion/cmd/list"
 
 	"github.com/mitchellh/go-homedir"
@@ -52,6 +53,7 @@ func init() {
 	cobra.OnInitialize(initConfig)
 	list.Init(rootCmd)
 	cat.Init(rootCmd)
+	completion.Init(rootCmd)
 }
 
 // initConfig reads in config file and ENV variables if set.
